@@ -116,6 +116,11 @@ border: none; background: none; font-weight: none; color: none; }
       <!--[if IE]>
 <link rel="stylesheet" type="text/css" href="../common/css/ie.css"/>
 <![endif]--><style xmlns="" type="text/css">
+#content body, #content p, #content ul, #content ol, #content li, dd
+{
+    font-size: 10pt;
+}
+
 .programlisting, .screen
 {
   border: 1px solid silver;
@@ -145,6 +150,12 @@ thead, p.table.header,
   font-weight: normal;
   border-bottom-width: 0;
   color: #3E4349;
+}
+
+
+#content h4
+{
+  color: darkblue;
 }
 
 #content h5
@@ -177,7 +188,7 @@ thead, p.table.header,
   padding-left: 15px;
 }
 
-#content p
+#content p, dl, dt, dd
 {
   line-height: 1.4em;
 }
@@ -192,6 +203,9 @@ div.note a, div.caution a, div.important a, div.tip a, div.warning a {
     border-bottom: 1px dotted #004B6B !important;
 }
 
+div.figure {
+    margin-top: 1em;
+}
 
 .filetree li span a
 {
@@ -368,7 +382,7 @@ div.itemizedlist li, div.orderedlist li {
                <ol class="orderedlist" type="1">
                   <li class="listitem">
                      
-                     Copy the <span class="emphasis"><em>java_api/session_provider/soss-sessionprovider-5.2.jar</em></span> JAR and the <span class="emphasis"><em>java_api/soss-jnc-5.2.jar</em></span> JAR into the application’s <span class="emphasis"><em>WEB-INF/lib</em></span> directory.
+                     Copy the <span class="emphasis"><em>java_api/session_provider/soss-sessionprovider-5.7.jar</em></span> JAR and the <span class="emphasis"><em>java_api/soss-jnc-5.7.jar</em></span> JAR into the application’s <span class="emphasis"><em>WEB-INF/lib</em></span> directory.
                      
                      
                   </li>

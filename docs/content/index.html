@@ -115,6 +115,11 @@ border: none; background: none; font-weight: none; color: none; }
       <!--[if IE]>
 <link rel="stylesheet" type="text/css" href="../common/css/ie.css"/>
 <![endif]--><style xmlns="" type="text/css">
+#content body, #content p, #content ul, #content ol, #content li, dd
+{
+    font-size: 10pt;
+}
+
 .programlisting, .screen
 {
   border: 1px solid silver;
@@ -144,6 +149,12 @@ thead, p.table.header,
   font-weight: normal;
   border-bottom-width: 0;
   color: #3E4349;
+}
+
+
+#content h4
+{
+  color: darkblue;
 }
 
 #content h5
@@ -176,7 +187,7 @@ thead, p.table.header,
   padding-left: 15px;
 }
 
-#content p
+#content p, dl, dt, dd
 {
   line-height: 1.4em;
 }
@@ -191,6 +202,9 @@ div.note a, div.caution a, div.important a, div.tip a, div.warning a {
     border-bottom: 1px dotted #004B6B !important;
 }
 
+div.figure {
+    margin-top: 1em;
+}
 
 .filetree li span a
 {
@@ -401,7 +415,7 @@ div.itemizedlist li, div.orderedlist li {
                      </li>
                      <li class="listitem">
                         
-                        Install the RPM: <code class="literal">sudo rpm -ivh soss-5.2.1-250.el6.x86_64.rpm</code> (It will be installed into <span class="emphasis"><em>/usr/local/soss5</em></span>.)
+                        Install the RPM: <code class="literal">sudo rpm -ivh soss-5.7.0-324.el7.x86_64.rpm</code> (It will be installed into <span class="emphasis"><em>/usr/local/soss5</em></span>.)
                         
                         
                      </li>
@@ -441,7 +455,7 @@ div.itemizedlist li, div.orderedlist li {
                   data structures used by the IMDG.
                </p>
                
-               <p>The Java API library for the ScaleOut StateServer session provider can be found in <span class="emphasis"><em>soss-sessionprovider-5.2.jar</em></span>, and the Java API library for creating, reading, updating, and deleting objects can be found in <span class="emphasis"><em>soss-jnc-5.2.jar</em></span>.
+               <p>The Java API library for the ScaleOut StateServer session provider can be found in <span class="emphasis"><em>soss-sessionprovider-5.7.jar</em></span>, and the Java API library for creating, reading, updating, and deleting objects can be found in <span class="emphasis"><em>soss-jnc-5.7.jar</em></span>.
                </p>
                
                <p>These JARs and their dependencies are located in the <span class="emphasis"><em>java_api</em></span> and <span class="emphasis"><em>java_api/session_provider</em></span> (<span class="emphasis"><em>JavaAPI</em></span> and <span class="emphasis"><em>JavaApi/SessionProvider</em></span> on Windows) subdirectories of the ScaleOut StateServer installation directory.
